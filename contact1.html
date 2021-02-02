@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE>
 <html lang="en">
 <head>
@@ -43,6 +45,45 @@
  background-color:wheat ;
  }
 
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+
+
+
+
+
 </style>
 
 
@@ -67,39 +108,35 @@
 </nav>
 
 <div>
- <img src="b.jpg" >
+ <img src="b.jpg" alt="" width="100%" height="90%">
 </div>
 <br><br><br>
 
 
 
 
-<P>NAME<INPUT TYPE="TEXT" SIZE="20" MAXLENGTH="99" />
-<P>AGE<INPUT TYPE="TEXT" SIZE="12" MAXLENGTH="99" />
-<P>ADDRESS<INPUT
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-<TYPE="TEXT" SIZE="42" MAXLENGTH="99" />
-<P>EMAIL<INPUT TYPE="TEXT" SIZE="30" MAXLENGTH="99" />
-<P>TELEPHONE<INPUT TYPE="TEXT" SIZE="10" MAXLENGTH="99" />
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-<P>CITY<SELECT naME="PLACE"><OPTION SELECTED>
+    <label for="country">Country</label>
+    <select id="country" name="country">
+<option value="canada">India</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
 
-Mexico</OPTION>
-<OPTION>China</OPTION>
-<OPTION>Brazil</OPTION>
-<OPTION>Jorden</OPTION>
-<OPTION>Italy</OPTION>
-<OPTION>Pinchu</OPTION>
-<OPTION>Egypt</OPTION>
-</p><br><br>
-<input type="submit" value="click here to submit" />
-<input
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-type="reset" value="clear this form" /></BODY></HTML>
-
-
-
-
+    <input type="submit" value="Submit">
+  </form>
+</div>
 
 
 
@@ -138,11 +175,24 @@ onymous"></script>
 
 
 <div class="footer">
-
-
   <p></p>
 </div>
 
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
